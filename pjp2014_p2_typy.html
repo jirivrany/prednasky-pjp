@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>PJP - Programovací jazyk Python - přednáška 1 - úvod</title>
+
+    <meta name="description" content="Druhá přednáška z PJP 2014" />
+    <meta name="author" content="Jiří Vraný - NTI FM TUL" />
+
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <link href="css/prednaska1.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+
+<body class="impress-not-supported">
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div id="impress">
+
+        <div id="title" class="step" data-x="0" data-y="0" data-scale="9">
+            <span class="try">PJP přednáška 2</span>
+            <h1>Typy</h1>
+            <span class="footnote">Jiří Vraný - NTI</span>
+        </div>
+
+        <div id="face-1" class="step" data-x="2000" data-z="350">
+            <p>silná typová kontrola</p>
+            <p>dynamické přetypování</p>
+            <p>duck typing</p>
+        </div>
+
+        <div id="face-2" class="step" data-x="2350" data-rotate-y="90">
+            <p>měnitelné a neměnitelné</p>
+            <p>vše je objekt</p>
+
+        </div>
+
+        <div id="face-3" class="step" data-x="2000" data-z="-350" data-rotate-y="180">
+            <p>čísla: int, float, complex</p>
+            <p>boolean: <b>T</b>rue, <b>F</b>alse</p>
+        </div>
+
+        <div id="face-4" class="step" data-x="1650" data-rotate-y="270">
+            <h1>řetezec</h1>
+            <p>neměnná sekvence znaků</p>
+            <p>indexace, operátor in, slice index</p>
+        </div>
+
+        <div id="face-5" class="step" data-x="2000" data-y="-350" data-rotate-x="90" data-rotate-y="360">
+            <h1>seznam - list</h1>
+            <p>dynamická sekvence různých prvků</p>
+            <p>indexovaná, operátor in, slice index</p>
+            <p>append není extend a naopak</p>
+        </div>
+
+        <div id="face-6" class="step important" data-x="2000" data-y="350" data-rotate-x="270" data-rotate-y="360">
+            <p>seznam je <b>měnitelný</b></p>
+        </div>
+
+
+        <div id="face-11" class="step" data-x="6000" data-z="350">
+            <h1>join a split</h1>
+            <p>z řetezce na seznam a naopak</p>
+            <p>split - metoda seznamu</p>
+            <p>join - metoda řetezce</p>
+        </div>
+
+        <div id="face-12" class="step" data-x="6350" data-rotate-y="90">
+            <p>Jak na kopírování složených objektů?</p>
+            <p>slice, balíček copy - metody copy a deepcopy</p>
+        </div>
+
+        <div id="face-13" class="step" data-x="6000" data-z="-350" data-rotate-y="180">
+            <h1>list comprehension</h1>
+            <p>generátor seznamů</p>
+        </div>
+
+        <div id="face-14" class="step" data-x="5650" data-rotate-y="270">
+            <h1>Tuple</h1>
+            <p>neměnný ekvivalent seznamu</p>
+        </div>
+
+        <div id="face-15" class="step" data-x="6000" data-y="-350" data-rotate-x="90" data-rotate-y="360">
+            <h1>Set - množina</h1>
+            <p>neuspořádaná struktura (nemá indexy)</p>
+            <p>každý prvek je unikátní</p>
+            <p>množinové operace - průnik, sjednocení, doplněk atd.</p>
+        </div>
+
+        <div id="face-16" class="step" data-x="6000" data-y="350" data-rotate-x="270" data-rotate-y="360">
+            <h1>Dictionary - slovník</h1>
+            <p>hash table = key : value</p>
+            <p>klíče tvoří množinu</p>
+            <p>hodnoty mohou být libovolné typy</p>
+        </div>
+
+         <div id="face-21" class="step" data-x="3000" data-y="3000" data-z="350">
+            <h1>užitečné funkce</h1>
+            <p>enumerate - když potřebujeme očíslovat prvky</p>
+            <p>zip - když potřebujeme spojit dva seznamy</p>
+        </div>
+
+        <div id="face-22" class="step" data-x="3350" data-y="3000" data-rotate-y="90">
+            <p>reversed() vs .reverse()</p>
+            <p>sorted() vs .sort()</p>
+        </div>
+
+        <div id="face-23" class="step" data-x="3000" data-y="3000" data-z="-350" data-rotate-y="180">
+            <p>keys, values, items</p>
+            <p>iterkeys, itervalues, iteritems</p>
+        </div>
+
+        <div id="face-24" class="step" data-x="2650" data-y="3000" data-rotate-y="270">
+            <p>max, min, sum, any</p>
+        </div>
+
+        <div id="face-25" class="step" data-x="3000" data-y="2650" data-rotate-x="90" data-rotate-y="360">
+            <p>len, range - používat s rozumem</p>
+        </div>
+
+        <div id="face-26" class="step" data-x="3000" data-y="3350" data-rotate-x="270" data-rotate-y="360">
+            <p>...a to je pro dnešek vše. Děkuji za pozornost.</p>
+        </div>
+
+
+
+        <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+        </div>
+
+    </div>
+
+    <div class="hint">
+        <p>Use a spacebar or arrow keys to navigate</p>
+    </div>
+    <script>
+    if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    }
+    </script>
+
+    <script src="js/impress.js"></script>
+    <script>
+    impress().init();
+    </script>
+</body>
+
+</html>
