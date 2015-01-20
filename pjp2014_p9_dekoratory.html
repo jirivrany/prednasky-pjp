@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>PJP - Programovací jazyk Python - přednáška 9 - dekorátory</title>
+
+    <meta name="author" content="Jiří Vraný - NTI FM TUL" />
+
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <link href="css/prednaska1.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+
+<body class="impress-not-supported">
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div id="impress">
+
+        <div id="title" class="step" data-x="0" data-y="0" data-scale="9">
+            <span class="try">PJP přednáška 9</span>
+            <h1>@decorator</h1>
+            <span class="footnote">Jiří Vraný - NTI</span>
+        </div>
+
+       
+
+
+        <div class="step important" data-x="3300" data-y="4500" data-z="0" data-scale="1">
+            <p>
+                vše je <b>objekt</b>
+            </p>
+        </div>
+
+        <div class="step important" data-x="4300" data-y="4500" data-z="400" data-scale="1">
+            <p>
+                tedy i funkce je <b>objekt</b>
+            </p>
+        </div>
+
+        <div class="step" data-x="4800" data-y="4000" data-z="0" data-scale="1">
+            <p>
+                funkci můžeme přiřadit jiné jméno <i>jako všem objektům</i>
+            </p>
+        </div>
+
+        <div class="step" data-x="5200" data-y="3500" data-z="-300" data-scale="1">
+            <p>
+                mutable objekty můžeme vnořovat do sebe <i>takže můžeme vnořit funkci do funkce</i>
+            </p>
+        </div>
+
+        <div class="step" data-x="5700" data-y="3000" data-z="-600" data-scale="1">
+            <p>
+                funkce může vracet jinou funkci <i>protože funkce vrací objekty</i>
+            </p>
+        </div>
+
+        <div class="step" data-x="6300" data-y="2500" data-z="-900" data-scale="1">
+            <p>
+                funkce může být argumentem funkce <i>protože argumenty funkcí jsou objekty</i>
+            </p>
+        </div>
+
+        <div class="step important" data-x="6800" data-y="2000" data-z="-1200" data-scale="1">
+            <p>
+                <b>high order</b> function
+            </p>
+        </div>
+
+         <div class="step" data-x="2000" data-y="2000" data-scale="1">
+            <h1>Karty - validace dat</h1>
+            <p>testujte hodnoty - ne typ</p>
+            <p>neprogramujte v konstruktoru</p>
+        </div>
+
+        <div class="step" data-x="2400" data-y="2500" data-z="-300" data-scale="1">
+            <p>jak na vlastnosti objektu?</p>
+        </div>
+
+        <div class="step" data-x="2700" data-y="3000" data-z="0" data-scale="1">
+            <h1>property()</h1>
+            <p>definice atributu a přístupových metod - načíst, změnit, smazat</p>
+        </div>
+
+
+
+        <div class="step important" data-x="7300" data-y="1500" data-z="0" data-scale="1">
+            <p>
+                <b>@decorator</b>
+            </p>
+        </div>
+
+        <div class="step" data-x="8300" data-y="1500" data-z="-100" data-scale="1">
+            <p>
+                Dekorátor je <i>callable</i> objekt, který modifikuje funkce, metody či třídy.
+            </p>
+        </div>
+
+        <div class="step" data-x="8300" data-y="1500" data-z="-100" data-scale="1">
+            <p>
+                Dekorátor umožňuje jednoduše vykonat určitý kód před i po zavolání dekorované funkce.
+            </p>
+        </div>
+
+        
+    </div>
+
+    <div class="hint">
+        <p>Us e a spacebar or arrow keys to navigate</p>
+    </div>
+    <script>
+    if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    }
+    </script>
+
+    <script src="js/impress.js"></script>
+    <script>
+    impress().init();
+    </script>
+</body>
+
+</html>

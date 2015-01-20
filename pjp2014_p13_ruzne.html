@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>PJP - Programovací jazyk Python - přednáška 13 - Context Managers, Multiprocessing, Threading, Socket programming</title>
+
+    <meta name="description" content="13. přednáška z PJP 2014" />
+    <meta name="author" content="Jiří Vraný - NTI FM TUL" />
+
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <link href="css/prednaska1.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+
+<body class="impress-not-supported">
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div id="impress">
+
+        <div id="title" class="step" data-x="0" data-y="0" data-scale="9">
+            <span class="try">PJP přednáška 13</span>
+            <h1>finále</h1>
+            <span class="footnote">Jiří Vraný - NTI</span>
+        </div>
+
+        <div class="step" data-x="1000" data-y="1000" data-z="100" data-scale="1">
+            <h1>Context managers</h1>
+        </div>
+
+        <div class="step" data-x="1000" data-y="2000" data-z="200" data-scale="1">
+            <p>setup a teardown pro objekty</p>
+            <p>with</p>
+            <p>built-in : open</p>
+            <p>můžeme si vytvořit vlastní</p>
+        </div>
+
+         <div class="step" data-x="1000" data-y="3000" data-z="300" data-scale="1">
+            <p>balíček <a href="http://docs.python.org/2/library/contextlib.html">contextlib</a></p>
+            <p>@contextmanager</p>
+            <p>closing()</p>
+        </div>
+
+        <div class="step" data-x="1000" data-y="4000" data-z="400" data-scale="1">
+            <h1>Výkon a rychlost</h1>
+        </div>
+
+        <div class="step" data-x="2000" data-y="4000" data-z="300" data-scale="1">
+            <p>kde to jde, použijte built-in funkce a standardní knihovnu</p>
+        </div>
+
+        <div class="step" data-x="3000" data-y="4000" data-z="200" data-scale="1">
+            <p>ne vždy je potřeba mít v paměti komplet data - generátory</p>
+        </div>
+
+        <div class="step" data-x="4000" data-y="4000" data-z="100" data-scale="1">
+            <p>list generátor i funkce map jsou rychlejší než for cyklus</p>
+        </div>
+
+        <div class="step" data-x="4000" data-y="3000" data-z="0" data-scale="1">
+            <p>výpočty - knihovna numpy a scipy</p>
+        </div>       
+
+        <div class="step" data-x="4000" data-y="0" data-z="300" data-scale="1">
+            <p><b>Threading</b></p>
+        </div>
+
+        <div class="step" data-x="4000" data-y="-1000" data-z="200" data-scale="1">
+            <p><a href="http://docs.python.org/2/glossary.html#term-global-interpreter-lock">GIL</a></p>
+            <p>Python bytecode může být spuštěn právě jedním vláknem</p>
+        </div>
+
+        <div class="step" data-x="3000" data-y="-1000" data-z="100" data-scale="1">
+            <p>balíček <a href="http://docs.python.org/2/library/threading.html">threading</a></p>
+            <p>můžete použít pro I/O operace</p>
+        </div>
+        
+        <div class="step" data-x="4000" data-y="2000" data-z="100" data-scale="1">
+            <h1>Multiprocessing</h1>
+            <p>nenechte jádra ležet ladem...</p>
+        </div>
+
+        <div class="step" data-x="4000" data-y="1000" data-z="200" data-scale="1">
+            <p>balíček multiprocessing</p>
+            <p>Pool</p>
+            <p>Proces, Queue, Pipe</p>
+        </div>
+
+        
+
+        <div class="step" data-x="2000" data-y="-1000" data-z="200" data-scale="1">
+            <p><b>Socket</b> programming</p>
+        </div>
+
+        <div class="step" data-x="2000" data-y="-2000" data-z="300" data-scale="1">
+            <p>BSD socket = základ síťových aplikací</p>
+            <p>TCP i UDP</p>
+            <a href="https://docs.python.org/2/library/socket.html" title="">manuál</a>
+        </div>
+
+
+        <div class="step" data-x="2000" data-y="-4000" data-z="400" data-scale="1">
+            <p>na co si dát pozor u zkoušky?</p>
+        </div>
+
+
+
+
+
+
+        
+
+    </div>
+
+    <div class="hint">
+        <p>Us e a spacebar or arrow keys to navigate</p>
+    </div>
+    <script>
+    if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    }
+    </script>
+
+    <script src="js/impress.js"></script>
+    <script>
+    impress().init();
+    </script>
+</body>
+
+</html>

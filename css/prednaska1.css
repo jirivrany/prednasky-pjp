@@ -192,17 +192,16 @@ h1 {
     transform:         translateY(0px);
 }
 
-/* impress.js title */
 
 #title {
-    padding: 0;
+    padding-top: 200px;
+    background-image: url('logolink.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
 #title .try {
     font-size: 64px;
-    position: absolute;
-    top: -0.5em;
-    left: 1.5em;
     
     -webkit-transform: translateZ(20px);
     -moz-transform:    translateZ(20px);
@@ -319,3 +318,7 @@ h1 {
     display: block;
 }
 
+h2 {
+    font-weight: bold;
+    font-size: 105%;
+}

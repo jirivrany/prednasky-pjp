@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>PJP - Programovací jazyk Python - přednáška 5 - OOP, argumenty funkcí, testy</title>
+    
+    <meta name="author" content="Jiří Vraný - NTI FM TUL" />
+
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <link href="css/prednaska1.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="9">
+        <span class="try">PJP přednáška 5</span>
+        <h1>OOP</h1>
+        <span class="footnote">Jiří Vraný - NTI</span>
+    </div>
+
+     <div class="step" data-x="7000" data-y="7000" data-scale="1">
+        <h1>Vlastní třídy</h1>
+        <p>class</p>
+    </div>
+
+    <div class="step" data-x="8000" data-y="8000" data-scale="1">
+        <h1>Dědičnost tříd</h1>
+        <p>class Name(parentClass):</p>
+        <p>class Name(Object): - výchozí</p>
+        <p>super(Name, self).__init__()</p>
+    </div>
+
+    <div class="step" data-x="7700" data-y="7500" data-z="-200" data-scale="1">
+        <h1>Speciální metody</h1>
+        <p>obecně __metoda__</p>
+        <p>definovaná jména - nevymýšlet vlatní!</p>
+        <p><a href="http://docs.python.org/2/reference/datamodel.html#special-method-names">Special Method Names</a></p>
+    </div>
+
+     <div class="step" data-x="7400" data-y="7000" data-z="-400" data-scale="1">
+        <h1>Argumenty funkce</h1>
+        <p>tvoří slovník - locals()</p>
+        <p>*args</p>
+        <p>**kwargs</p>
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+</body>
+</html>

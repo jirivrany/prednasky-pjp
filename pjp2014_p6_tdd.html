@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>PJP - Programovací jazyk Python - přednáška 5 - testování</title>
+
+    <meta name="author" content="Jiří Vraný - NTI FM TUL" />
+
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <link href="css/prednaska1.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+
+<body class="impress-not-supported">
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div id="impress">
+
+        <div id="title" class="step" data-x="0" data-y="0" data-scale="9">
+            <span class="try">PJP přednáška 6</span>
+            <h1>TDD</h1>
+            <span class="footnote">Jiří Vraný - NTI</span>
+        </div>
+
+        <div class="step important" data-x="-1000" data-y="1000" data-z="-100" data-scale="1">
+            <p><b>proč</b> psát testy?</p>
+        </div>
+
+        <div class="step important" data-x="-2000" data-y="2000" data-z="-200" data-scale="1">
+            <p>proč psát testy <b>dříve</b> než samotný program?</p>
+        </div>
+
+        <div class="step" data-x="-3000" data-y="2000" data-z="-300" data-scale="1">
+            <h1>Test je specifikace</h1>
+            <p>rozhraní, funkcionality či chování aplikace</p>
+        </div>
+
+        <div class="step" data-x="-4000" data-y="2000" data-z="-300" data-scale="1">
+            <p>Nejdřív je test - když je program hotový nemusí se už psát testy.</p>
+            <p><i>což je nuda a nikdo to nedělá rád...</i></p>
+        </div>
+
+        <div class="step" data-x="-5000" data-y="2000" data-z="-300" data-scale="1">
+            <p>Nejdřív musíte vymyslet rozhraní programu.</p>
+            <p><i>což vás donutí nad ním opravdu přemýšlet...</i></p>
+        </div>
+
+        <div class="step" data-x="-5000" data-y="3000" data-z="-300" data-scale="1">
+            <p>testy fungují - máte jistotu že program dělá co má.</p>
+            <p><i>když jsou testy dobře napsané</i></p>
+        </div>
+
+        <div class="step" data-x="-5000" data-y="4000" data-z="-300" data-scale="1">
+            <p>můžete vesele refaktorovat</p>
+        </div>
+
+         <div class="step" data-x="-5000" data-y="5000" data-z="-100" data-scale="1">
+            <p>prostě ti to zkuste a uvidíte...</p>
+        </div>
+
+
+        <div class="step" data-x="-3000" data-y="5000" data-z="-200" data-scale="1">
+            <p><img src="img/tdd.svg"></p>
+        </div>
+
+        <div class="step" data-x="-1000" data-y="5000" data-z="-200" data-scale="1">
+            <p><img src="img/redgreenrefacor.png"></p>
+        </div>
+
+        <div class="step" data-x="3000" data-y="4000" data-z="10" data-scale="1">
+            <p>kolik kódu pokrýt testy</p> 
+            <p>100%, 50%, 75% ? </p>
+        </div>
+
+        <div class="step" data-x="4000" data-y="3000" data-z="100" data-scale="1">
+            <p>existuje řada druhů testů: jednotkové, funkcionální, integrační, systémové, akceptační...</p>
+        </div>
+
+         <div class="step" data-x="5000" data-y="2000" data-z="-10" data-scale="1">
+            <h1>jednotkové - unit</h1>
+            <p>základ pro programátora</p>
+        </div>
+
+        <div class="step" data-x="6000" data-y="1000" data-z="-200" data-scale="1">
+            <p>Unit test by měl být: rychlý, spolehlivý, izolovaný a čistý kód.</p>
+        </div>
+
+        <div class="step" data-x="6000" data-y="1000" data-rotate-z="-200" data-scale="1">
+            <p>Doctest</p>
+            <p>UnitTest</p>
+            <h1>py.test</h1>
+            <p>Nose</p>
+        </div>
+
+        <div class="step important" data-x="7000" data-y="0" data-z="-300" data-scale="1">
+            <p>je to všechno<b>?</b></p>
+        </div>
+
+        <div class="step" data-x="7000" data-y="1000" data-z="-300" data-scale="1">
+            <h1>BDD - testy chování</h1>
+            <p>Behavior Driven - píšeme scénáře.</p>
+            <p>př: když jako uživatel kliknu na tlačítko 1 měla by se na displeji kalkulačky přidat jednička</p>
+        </div>
+
+        <div class="step" data-x="6000" data-y="2000" data-z="-300" data-scale="1">
+            <h1>pytest</h1>
+            <p>co ještě umí?</p>
+        </div>
+
+        <div class="step" data-x="5000" data-y="3000" data-z="-300" data-scale="1">
+            <p>autorun - watch</p>
+            <p>balíček <a href="https://pypi.python.org/pypi/pytest-xdist">pytest-xdist</a></p>
+        </div>
+
+        <div class="step" data-x="4000" data-y="4000" data-z="-300" data-scale="1">
+            <p>doctest</p>
+        </div>
+
+        <div class="step" data-x="3000" data-y="5000" data-z="-300" data-scale="1">
+            <p>pytest.ini</p>
+        </div>
+
+        <div class="step" data-x="1000" data-y="7000" data-z="-300" data-scale="1">
+            <p>TDD ukázka - řešení úkolů 2 a 3</p>
+        </div>
+
+
+
+
+
+        
+
+        
+
+    </div>
+
+    <div class="hint">
+        <p>Us e a spacebar or arrow keys to navigate</p>
+    </div>
+    <script>
+    if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    }
+    </script>
+
+    <script src="js/impress.js"></script>
+    <script>
+    impress().init();
+    </script>
+</body>
+
+</html>

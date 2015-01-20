@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>PJP - Programovací jazyk Python - přednáška 10 - vstup a výstup podruhé</title>
+
+    <meta name="author" content="Jiří Vraný - NTI FM TUL" />
+
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <link href="css/prednaska1.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+
+<body class="impress-not-supported">
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div id="impress">
+
+        <div id="title" class="step" data-x="0" data-y="0" data-scale="9">
+            <span class="try">PJP přednáška 10</span>
+            <h1>I/O podruhé</h1>
+            <span class="footnote">Jiří Vraný - NTI</span>
+        </div>
+
+        <div id="face-1" class="step" data-x="2000" data-z="350">
+            <p>stdin a stdout, argumenty z příkazové řádky, logování, formáty pro výměnu dat</p>
+        </div>
+
+        <div id="face-2" class="step" data-x="2350" data-rotate-y="90">
+            <p><a href="https://docs.python.org/2/library/sys.html" title="sys">modul <b>sys</b></a></p>
+            <p>přístup k systémovým službám</p>
+
+        </div>
+
+        <div id="face-3" class="step" data-x="2000" data-z="-350" data-rotate-y="180">
+            <p>stdin, stdout = file like objekty</p>
+        </div>
+
+        <div id="face-4" class="step" data-x="1650" data-rotate-y="270">
+            <h1>cmd line</h1>
+            <p>základní interakce skriptů</p>
+            <p>moduly argparse a getopt</p>
+        </div>
+
+        <div id="face-5" class="step" data-x="2000" data-y="-350" data-rotate-x="90" data-rotate-y="360">
+            <h1>Argparse</h1>
+            <p>doporučený způsob</p>
+            <p>připravené metody pro help, krátké a dlouhé volby atd.</p>
+            <p><a href="https://docs.python.org/2.7/library/argparse.html" title="manual">python manuál</a></p>
+           
+        </div>
+
+        <div id="face-6" class="step" data-x="2000" data-y="350" data-rotate-x="270" data-rotate-y="360">
+            <p><a href="https://docs.python.org/2/library/os.html?highlight=os#module-os" title="os">modul <b>os</b></a></p>
+            <p>systémové věci závislé na platformě (procesy, soubory atd.)</p>
+        </div>
+
+
+        <div id="face-11" class="step" data-x="6000" data-z="350">
+            <p>formáty pro data</p>
+            <h1>
+                XML
+            </h1>
+            <h1>
+                JSON
+            </h1>
+            <h1>
+                YAML
+            </h1>
+        </div>
+
+        <div id="face-12" class="step" data-x="6350" data-rotate-y="90">
+            <h1>
+                JSON
+            </h1>
+            <p>jednoduchý</p>
+            <p>standard webu</p>
+            <p>nemá typy</p>
+            <p>key: value - jako Python dict</p>
+        </div>
+
+        <div id="face-13" class="step" data-x="6000" data-z="-350" data-rotate-y="180">
+            <p>balíček json</p>
+            <p>json.dumps</p>
+            <p>json.load, json.loads</p>
+            <p>složitější věci? Encode a Decode</p>
+        </div>
+
+        <div id="face-14" class="step" data-x="5650" data-rotate-y="270">
+            <h1>XML</h1>
+            <p>eXtensible Markup Language</p>
+        </div>
+
+        <div id="face-15" class="step" data-x="6000" data-y="-350" data-rotate-x="90" data-rotate-y="360">
+            <p>RSS, XHTML, SVG, SOAP, Android resources, TCX, GPX, ...</p>
+        </div>
+
+        <div id="face-16" class="step" data-x="6000" data-y="350" data-rotate-x="270" data-rotate-y="360">
+            <p>XML má stejný základ jako HTML - takže potřebujeme parser</p>
+        </div>
+
+         <div id="face-21" class="step" data-x="3000" data-y="3000" data-z="350">
+            <p><a href="https://docs.python.org/2/library/xml.html">XML modul</a></p>
+            <p>ElementTree</p>
+            <p>DOM, miniDOM</p>
+            <p>SAX parser</p>
+            <p>Expat</p>
+        </div>
+
+        <div id="face-22" class="step" data-x="3350" data-y="3000" data-rotate-y="90">
+            <p><a href="https://docs.python.org/2/library/xml.dom.html" title="">module xml.dom</a></p>
+            <p>WC3 standard</p>
+            <p>jednoduché, známá technologie z JS</p>
+            <p>celý dokument musí být v paměti</p>
+        </div>
+
+        <div id="face-23" class="step" data-x="3000" data-y="3000" data-z="-350" data-rotate-y="180">
+            <p><a href="https://docs.python.org/2/library/xml.etree.elementtree.html">module ElementTree</a></p>
+            <p>jednoduchý strom</p>
+            <p>iterativní parsování - i pro velké soubory</p>
+        </div>
+
+        <div id="face-24" class="step" data-x="2650" data-y="3000" data-rotate-y="270">
+            <p><a href="http://www.crummy.com/software/BeautifulSoup/">Beautiful Soup</a></p>
+            <p>parser pro XML i HTML</p>
+            <p>toleruje chyby v dokumentu, jednoduché api</p>
+            <p>celý dokument musí být v paměti</p>
+        </div>
+
+        <div id="face-25" class="step" data-x="3000" data-y="2650" data-rotate-x="90" data-rotate-y="360">
+            <h1>YAML</h1>
+            <p>podobný JSON, syntax podobná Pythonu</p>
+            <p><a href="http://pyyaml.org/wiki/PyYAMLDocumentation">module PyYAML</a> - externí</p>
+        </div>
+
+        <div id="face-26" class="step" data-x="3000" data-y="3350" data-rotate-x="270" data-rotate-y="360">
+            <p><a href="https://docs.python.org/2/howto/logging.html" title="">modul logging</a></p>
+            <p>logování - stdout, file</p>
+            <p>hadlery pro: HTTP, SMTP a další</p>
+        </div>
+
+
+
+        <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+        </div>
+
+    </div>
+
+    <div class="hint">
+        <p>Use a spacebar or arrow keys to navigate</p>
+    </div>
+    <script>
+    if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    }
+    </script>
+
+    <script src="js/impress.js"></script>
+    <script>
+    impress().init();
+    </script>
+</body>
+
+</html>

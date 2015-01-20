@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>PJP - Programovací jazyk Python - přednáška 3 - Power of Introspection</title>
+
+    <meta name="description" content="První přednáška z PJP 2013" />
+    <meta name="author" content="Jiří Vraný - NTI FM TUL" />
+
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <link href="css/prednaska1.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+
+<body class="impress-not-supported">
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div id="impress">
+
+        <div id="title" class="step" data-x="0" data-y="0" data-scale="9">
+            <span class="try">PJP přednáška 3</span>
+            <h1>První ponor...</h1>
+            <span class="footnote">Jiří Vraný - NTI</span>
+        </div>
+
+        <div class="step important" data-x="1000" data-y="1000" data-z="100" data-scale="1">
+            <p>základní <b>nástroje</b> pro vývojáře</p>
+        </div>
+
+        <div class="step" data-x="1500" data-y="1500" data-z="-100" data-scale="1">
+            <h1>balíčky</h1>
+            <p>Setuptools - easy_install</p>
+            <p>PIP - Python Package Index</p>
+        </div>
+
+        <div class="step" data-x="2000" data-y="1000" data-z="100" data-scale="1">
+            <h1>Virtual Enviroment</h1>
+            <p>Izolovaná instalace Pythonu</p>
+        </div>
+
+        <div class="step" data-x="2500" data-y="500" data-z="-100" data-scale="1">
+            <p><a href="https://pypi.python.org/pypi/pip">PIP python.org</a></p>
+            <p><a href="https://pypi.python.org/pypi/setuptools">SetupTools</a></p>
+            <p><a href="http://www.virtualenv.org/en/latest/index.html">www.virtualenv.org</a>
+            </p>
+            <p><a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/">Virtual Environments Python Guide</a>
+            </p>
+        </div>
+
+
+        <div class="step" data-x="7000" data-y="9000" data-scale="1">
+            <p>Dive into Python kap. 3.</p>
+            <p>Argumenty funkcí, generátory seznamů, vzor dispatcher, generátor yield a další...</p>
+        </div>
+
+        <div class="step" data-x="8000" data-y="8000" data-scale="1">
+            <h1>Argumenty funkcí</h1>
+            <p>Dictionary - mají jména</p>
+            <p>S výchozí hodnotou, nebo bez ní</p>
+        </div>
+
+        <div class="step" data-x="8300" data-y="7500" data-z="-200" data-scale="1">
+            <h1>?</h1>
+            <p>Jak vyřešit situaci, kdy hodnota argumentu funkce není předem známá?</p>
+        </div>
+
+        <div class="step" data-x="8600" data-y="7000" data-z="-400" data-scale="1">
+            <h1>getattr</h1>
+            <p>návrhový vzor dispatcher</p>
+        </div>
+
+        <div class="step" data-x="8900" data-y="6500" data-z="-600" data-scale="1">
+            <h1>callable</h1>
+            <p>a další <b>__builtin__</b> funkce</p>
+        </div>
+
+        <div class="step" data-x="9200" data-y="6000" data-z="-800" data-scale="1">
+            <h1>ternární operátor</h1>
+            <p>nemáme x ? y : z</p>
+            <p>máme x and y or z</p>
+            <p>máme y if x else z</p>
+        </div>
+
+        <div class="step" data-x="10200" data-y="6000" data-z="-600" data-scale="1">
+            <h1>Lambda funkce</h1>
+            <p>zjednodušení syntaxe zápisu</p>
+            <p>pro jednořádkové funkce</p>
+            <p><b>lambda</b> x: fce(x)</p>
+        </div>
+
+        <div class="step" data-x="10500" data-y="6500" data-z="-400" data-scale="1">
+            <p>input()</p>
+            <p>raw_input()</p>
+        </div>
+
+        <div class="step" data-x="10800" data-y="7000" data-z="-200" data-scale="1">
+            <h1>Generátory</h1>
+            <p>()</p>
+            <p>yield()</p>
+        </div>
+
+        <div class="step" data-x="11300" data-y="7500" data-scale="1">
+            <h1>A to je vše...</h1>
+        </div>
+
+
+    </div>
+
+    <div class="hint">
+        <p>Use a spacebar or arrow keys to navigate</p>
+    </div>
+    <script>
+    if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    }
+    </script>
+
+    <script src="js/impress.js"></script>
+    <script>
+    impress().init();
+    </script>
+</body>
+
+</html>
